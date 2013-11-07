@@ -14,9 +14,7 @@
 
     <!-- Application theme. -->
     <style name="AppTheme" parent="AppBaseTheme">
-        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator.Custom</item>
+
     </style>
     
-    <style name="Widget.TabPageIndicator.Custom" />
-
 </resources>
