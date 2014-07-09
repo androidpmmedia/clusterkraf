@@ -9,18 +9,17 @@ import android.app.Activity;
  */
 public class DelayedIndeterminateProgressBarRunnable implements Runnable {
 
-	private final WeakReference<Activity> activityRef;
+  private final WeakReference<Activity> activityRef;
 
-	public DelayedIndeterminateProgressBarRunnable(Activity activity) {
-		this.activityRef = new WeakReference<Activity>(activity);
-	}
+  public DelayedIndeterminateProgressBarRunnable(Activity activity) {
+    this.activityRef = new WeakReference<Activity>(activity);
+  }
 
-	@Override
-	public void run() {
-		Activity activity = activityRef.get();
-		if (activity != null) {
-			activity.setProgressBarIndeterminateVisibility(true);
-		}
-	}
-
+  @Override
+  public void run() {
+    Activity activity = activityRef.get();
+    if (activity != null) {
+      activity.setProgressBarIndeterminateVisibility(true);
+    }
+  }
 }

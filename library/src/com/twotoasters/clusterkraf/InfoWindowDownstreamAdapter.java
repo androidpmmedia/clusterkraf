@@ -8,7 +8,7 @@ import com.google.android.gms.maps.model.Marker;
  */
 public interface InfoWindowDownstreamAdapter {
 
-    public View getInfoContents(Marker marker, ClusterPoint clusterPoint);
+  public View getInfoContents(Marker marker, ClusterPoint clusterPoint);
 
-    public View getInfoWindow(Marker marker, ClusterPoint clusterPoint);
+  public View getInfoWindow(Marker marker, ClusterPoint clusterPoint);
 }

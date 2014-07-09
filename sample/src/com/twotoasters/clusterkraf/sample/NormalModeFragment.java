@@ -10,23 +10,22 @@ import android.view.ViewGroup;
 
 public class NormalModeFragment extends Fragment {
 
-	@Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		View view = inflater.inflate(R.layout.fragment_normal_mode, null);
+  @Override
+  public View onCreateView(LayoutInflater inflater, ViewGroup container,
+      Bundle savedInstanceState) {
+    View view = inflater.inflate(R.layout.fragment_normal_mode, null);
 
-		view.findViewById(R.id.button).setOnClickListener(new StartButtonOnClickListener());
+    view.findViewById(R.id.button).setOnClickListener(new StartButtonOnClickListener());
 
-		return view;
-	}
+    return view;
+  }
 
-	private class StartButtonOnClickListener implements OnClickListener {
+  private class StartButtonOnClickListener implements OnClickListener {
 
-		@Override
-		public void onClick(View v) {
-			Intent i = new Intent(getActivity(), SampleActivity.class);
-			startActivity(i);
-		}
-
-	}
-
+    @Override
+    public void onClick(View v) {
+      Intent i = new Intent(getActivity(), SampleActivity.class);
+      startActivity(i);
+    }
+  }
 }
